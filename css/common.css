@@ -1,10 +1,11 @@
+/* 导航栏 */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100%;
-  height: 69.99px;
+  height: 52.99px;
   border-bottom: 1px solid #2b3540;
   background: #1e202f;
   display: flex;
@@ -14,18 +15,19 @@
 
 .logo h1 a {
   display: block;
-  width: 109.99px;
-  height: 47.99px;
+  /* 长宽改小大概1/3吧  */
+  width: 82px;
+  height: 36px;
   background: url(../img/logo1.png) no-repeat;
   background-size: 100% 100%;
   text-indent: -999px;
   overflow: hidden;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .container {
   position: relative;
-  width: 1140px;
+  width: 960px;
   height: 69.99px;
   display: flex;
 }
@@ -37,7 +39,7 @@
 .container .menu>li {
   position: relative;
   border-bottom: 3px solid transparent;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .container .menu>li:hover {
@@ -51,7 +53,7 @@
   line-height: 69.99px;
   text-indent: 5px;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /* 中心旋转的话应该用图片的，用成图标了，遗憾离场 */
@@ -121,7 +123,7 @@
 .container .order a {
   display: block;
   text-align: center;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .container .order .login {
@@ -137,9 +139,9 @@
 }
 
 .container .order .download {
-  width: 85.15px;
-  height: 34.99px;
-  line-height: 34.99px;
+  width: 63.15px;
+  height: 27.99px;
+  line-height: 27.99px;
   color: #fff;
   background: #FF9900;
 }
@@ -153,60 +155,62 @@
 }
 
 .container .order .int {
-  width: 120px;
-  height: 34.99px;
-  line-height: 34.99px;
+  width: 80px;
+  height: 27.99px;
+  line-height: 27.99px;
   color: #fff;
   background: #393b4d;
 }
 
-
+/* 侧边栏 */
 .sidebar {
   position: fixed;
-  top: 20%;
+  top: 35%;
   right: 0;
   z-index: 9999;
-  transition: all 0.3s ease-in-out;
-  transform: translateX(73px);
 }
 
+.sidebar li {
+  transform: translateX(87.75px);
+}
 
 .sidebar li a:hover {
-  transform: translateX(-73px);
+  transform: translateX(-54.75px);
 }
 
 .sidebar li a {
   display: block;
   width: 130px;
   display: flex;
+  transition: all 0.3s ease-in-out;
 }
 
 /* 为什么不能用class 选择器？ */
 .sidebar li .box {
-  width: 57px;
-  height: 50px;
+  width: 42px;
+  height: 37px;
   background: url(../img/side.jpg) no-repeat;
-  background-size: 550px 630px;
-  background-position: -250px -82px;
+  background-size: 522.5px 598.5px;
+  background-position: -242px -83px;
 }
 
 .sidebar li .box1 {
-  background-position: -250px -137px;
+  background-position: -241px -132px;
 }
 
 .sidebar li .box2 {
-  background-position: -250px -190px;
+  background-position: -240px -188px;
 }
 
 .sidebar li .box3 {
-  background-position: -250px -250px;
+  background-position: -241px -245px;
 }
 
 .sidebar li .box4 {
-  background-position: -250px -305px;
+  background-position: -240px -298px;
 }
 
 .sidebar li img {
-  height: 50px;
-  width: 73px;
+  height: 37px;
+  width: 54.75px;
 }
